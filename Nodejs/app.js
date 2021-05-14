@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser")
 const userRouter = require("./router/data-router")
-const app = express();
+const app = express(2);
 
 
 mongoose.connect('mongodb://localhost:27017/CRUD', { useNewUrlParser: true });
